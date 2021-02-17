@@ -1,0 +1,22 @@
+//Declaração de variavéis
+double MediaVendas;
+double abono;
+
+// Processamento dos dados e saída
+void calcularMedia(double Jan,double Fev,double Mar,double Abr) {
+
+  MediaVendas = (Jan + Fev + Mar + Abr) / 4;
+  if (MediaVendas >= 5000){
+  abono = (MediaVendas * 0.1); 
+  print ("Parabéns! Sua média de vendas nos últimos 4 meses foi de: $MediaVendas, você vai receber um abono de 10%, no valor de $abono.");
+  } else {
+   abono = (MediaVendas * 0.03); 
+  print ("Sua média de vendas nos últimos 4 meses foi de: $MediaVendas, você receberá um abono de 3%, no valor de $abono.");
+  }
+  }
+
+// Entrada de dados
+void main() {
+  calcularMedia(5000,1000,1000,1000);
+
+}
